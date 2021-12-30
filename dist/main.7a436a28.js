@@ -106,9 +106,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"epB2":[function(require,module,exports) {
 var $siteList = $('.siteList');
 var $lastLi = $siteList.find('li.last');
-var x = localStorage.getItem('x');
-var xObject = JSON.parse(x);
-var hashMap = xObject || [{ logo: 'A', url: 'https://www.alibaba.com' }, { logo: 'B', url: 'https://www.bilibili.com' }];
+var webPage = localStorage.getItem('webPage');
+var webPageObject = JSON.parse(webPage);
+var hashMap = webPageObject || [{ logo: 'A', url: 'https://www.alibaba.com' }, { logo: 'B', url: 'https://www.bilibili.com' }];
 
 var simplifyUrl = function simplifyUrl(url) {
     return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //删除以 / 开头的内容
@@ -158,4 +158,4 @@ window.onbeforeunload = function () {
 //     }
 // })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.50adc681.map
+//# sourceMappingURL=main.7a436a28.map
