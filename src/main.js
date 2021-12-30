@@ -59,12 +59,12 @@ window.onbeforeunload = ()=>{
     localStorage.setItem('x',string)
 }
 
-// $(document).on('keypress',(e)=>{
-//     const {key} = e //const key = e.key的简写
-//     for(let i=0;i<hashMap.length;i++){
-//         if(hashMap[i].logo.toLowerCase()===key){//如果hashMap的第i个logo的小写等于key
-//             window.open(hashMap[i].url) //就打开这个网站
-//         }
-//     }
-// })
+$(document).on('keypress',(e)=>{
+    const {key} = e //const key = e.key的简写
+    for(let i=0;i<hashMap.length;i++){
+        if(hashMap[i].logo.toLowerCase()===key){//如果hashMap的第i个logo的小写等于key
+            window.open(hashMap[i].url) //就打开这个网站
+        }
+    }
+})
 

@@ -149,13 +149,15 @@ window.onbeforeunload = function () {
     localStorage.setItem('x', string);
 };
 
-// $(document).on('keypress',(e)=>{
-//     const {key} = e //const key = e.key的简写
-//     for(let i=0;i<hashMap.length;i++){
-//         if(hashMap[i].logo.toLowerCase()===key){//如果hashMap的第i个logo的小写等于key
-//             window.open(hashMap[i].url) //就打开这个网站
-//         }
-//     }
-// })
+$(document).on('keypress', function (e) {
+    var key = e.key; //const key = e.key的简写
+
+    for (var i = 0; i < hashMap.length; i++) {
+        if (hashMap[i].logo.toLowerCase() === key) {
+            //如果hashMap的第i个logo的小写等于key
+            window.open(hashMap[i].url); //就打开这个网站
+        }
+    }
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.7a436a28.map
+//# sourceMappingURL=main.952ff1ab.map
