@@ -41,8 +41,7 @@ const render = ()=>{
 
 render()
 
-$('.addButton')
-    .on('click', ()=>{
+$('.addButton').on('click', ()=>{
         let url = window.prompt('输入一个要新增的网址吧')
         if(url.indexOf('http')!==0){
             url = 'https://' + url

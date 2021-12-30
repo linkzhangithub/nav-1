@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-*before,
+*:before,
 *:after {
   box-sizing: border-box;
 }
@@ -27,7 +27,13 @@ img {
 
 /* style */
 body {
-  background: #eee;
+  background: rgb(105, 207, 219);
+  background: radial-gradient(
+    circle,
+    rgba(105, 207, 219, 1) 0%,
+    rgba(183, 159, 231, 1) 68%,
+    rgba(86, 90, 223, 1) 100%
+  );
 }
 
 .globalHeader {
