@@ -9,7 +9,7 @@ const hashMap = webPageObject || [
 
 const simplifyUrl = (url) =>{
     return url.replace('https://', '')
-    .replace('http://', '')
+    .replace('https://', '')
     .replace('www.', '')
     .replace(/\/.*/, '')  //删除以 / 开头的内容
 }

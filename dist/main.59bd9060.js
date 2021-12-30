@@ -111,7 +111,7 @@ var webPageObject = JSON.parse(webPage);
 var hashMap = webPageObject || [{ logo: 'A', url: 'https://www.alibaba.com' }, { logo: 'B', url: 'https://www.bilibili.com' }];
 
 var simplifyUrl = function simplifyUrl(url) {
-    return url.replace('https://', '').replace('http://', '').replace('www.', '').replace(/\/.*/, ''); //删除以 / 开头的内容
+    return url.replace('https://', '').replace('https://', '').replace('www.', '').replace(/\/.*/, ''); //删除以 / 开头的内容
 };
 
 var render = function render() {
@@ -160,4 +160,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.952ff1ab.map
+//# sourceMappingURL=main.59bd9060.map
